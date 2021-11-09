@@ -1,0 +1,94 @@
+public class Persona{
+
+    String nombre;
+    String apellidos;
+    int edad;
+    boolean casado;
+    String numeroDocumentoIdentidad;
+
+    public Persona(){
+        nombre="Gustavo ";
+        apellidos="Perez Rosas ";
+        edad=49;
+        casado=true;
+        numeroDocumentoIdentidad=" 39458NOONDF";
+    }
+
+    public void setNombre(String valorNombre){
+        nombre=valorNombre;
+    }
+
+    public void setApellidos(String valorApellidos){
+        apellidos=valorApellidos;
+    }
+
+    public void setEdad(int valorEdad){
+        edad=valorEdad;
+    }
+
+    public void setCasado(boolean valorCasado){
+        casado=valorCasado;
+    }
+
+    public void setNumeroDocumentoIdentidad(String valorNumeroDocumentoIdentidad){
+        numeroDocumentoIdentidad=valorNumeroDocumentoIdentidad;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public String getApellidos(){
+        return apellidos;
+    }
+
+    public int getEdad(){
+        return edad;
+    }
+
+    public boolean getCasado(){
+        return casado;
+    }
+
+    public String getNumeroDocumentoIdentidad(){
+        return numeroDocumentoIdentidad;
+    }
+}
+
+public class DivCeroFloat{
+	public static void main(String[] args){
+
+	    int opcion;
+		System.out.println("Hola usuario bienvenido");
+		System.out.println("usted tiene los numeros 50 y 100");
+		System.out.println("que operacion desea ver?");
+		System.out.println("suma");
+		System.out.println("resta");
+		System.out.println("divición");
+		System.out.println("modulo");
+		opcion=teclado.nextInt();
+
+		switch (opcion){
+		    case 1:
+		        suma=50+100;
+		        System.out.println(suma);
+		    break;
+		    case 2:
+		        resta=50-100;
+		        System.out.println(resta);
+		    break;
+		    case 3:
+		        divicion=50/100;
+		        System.out.println(divicion);
+		    break;
+		    case 4:
+		        mod=50%100;
+		        System.out.println(mod);
+		    break;
+		}
+
+		for (int i = 10; i >= 1;  i--){
+		System.out.print(i);//Se muestra cada valor de i (de 1 a 10)
+       }
+    }
+}
